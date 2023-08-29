@@ -10,6 +10,7 @@ import {
   YStack
 } from "tamagui";
 
+import Auth from "../components/Auth";
 import { MyStack } from "../components/MyStack";
 
 export default function Home() {
@@ -28,60 +29,9 @@ export default function Home() {
         </Paragraph>
       </YStack>
 
-      <Button onPress={() => router.push("/users/testuser")}>
-        Go to user page
-      </Button>
+      <Auth />
 
-      <YStack space="$5">
-        <YGroup
-          bordered
-          separator={<Separator />}
-          theme="green"
-        >
-          <YGroup.Item>
-            <Link
-              asChild
-              href="https://twitter.com/natebirdman"
-              target="_blank"
-            >
-              <ListItem
-                hoverTheme
-                title="Nate"
-                pressTheme
-                icon={Twitter}
-              />
-            </Link>
-          </YGroup.Item>
-          <YGroup.Item>
-            <Link
-              asChild
-              href="https://github.com/tamagui/tamagui"
-              target="_blank"
-            >
-              <ListItem
-                hoverTheme
-                pressTheme
-                title="Tamagui"
-                icon={Github}
-              />
-            </Link>
-          </YGroup.Item>
-          <YGroup.Item>
-            <Link
-              asChild
-              href="https://github.com/ivopr/tamagui-expo"
-              target="_blank"
-            >
-              <ListItem
-                hoverTheme
-                pressTheme
-                title="This Template"
-                icon={Github}
-              />
-            </Link>
-          </YGroup.Item>
-        </YGroup>
-      </YStack>
+      <YStack />
     </MyStack>
   );
 }
