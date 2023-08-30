@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "upgrade:tamagui": "$npm_execpath up '*tamagui*' '@tamagui/*'"
   },
@@ -19,7 +19,9 @@
     "@tamagui/themes": "^1.49.10",
     "expo": "49.0.6",
     "expo-constants": "~14.4.2",
+    "expo-dev-client": "~2.4.8",
     "expo-font": "11.4.0",
+    "expo-image-picker": "~14.3.2",
     "expo-linear-gradient": "~12.3.0",
     "expo-linking": "~5.0.2",
     "expo-router": "2.0.0",
@@ -47,6 +49,7 @@
     "@semantic-release/npm": "9.0.1",
     "@semantic-release/release-notes-generator": "10.0.3",
     "@types/react": "~18.2.14",
+    "@types/react-native": "^0.72.2",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "babel-plugin-transform-inline-environment-variables": "^0.4.4",

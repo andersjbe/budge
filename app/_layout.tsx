@@ -43,6 +43,7 @@ export default function Layout() {
                   headerShown: false
                 }}
               />
+              {/* <Slot /> */}
             </MySafeAreaView>
           </ThemeProvider>
         </Theme>

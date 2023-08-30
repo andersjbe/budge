@@ -12,6 +12,20 @@
     "slug": "yourappname",
     "plugins": [
       "expo-router"
-    ]
+    ],
+    "android": {
+      "package": "com.andersjbe.budge"
+    },
+    "ios": {
+      "bundleIdentifier": "com.andersjbe.budge"
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "aa8dfdf4-a739-47e4-9960-984c290bdb92"
+      }
+    }
   }
 }
